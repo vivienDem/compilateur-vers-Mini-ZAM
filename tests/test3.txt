@@ -1,0 +1,23 @@
+begin
+	let x = (ref 1) in 
+		let y = (ref 2) in 
+			let z = (ref 3) in
+		begin 
+		print (!x);
+		print (!y);
+		print (!z);
+		print (!x)+(!z)*(!y)
+		end;
+	print true
+end
+
+/*
+Affichage attendu:
+1
+2
+3
+7
+1
+*/
+
+//Le but est ici de vérifier le bon fonctionnement du déréférencement 

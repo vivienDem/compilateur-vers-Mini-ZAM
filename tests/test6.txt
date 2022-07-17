@@ -1,0 +1,16 @@
+let x = (ref 3) in
+	begin
+		print (!x);
+		x := 6;
+		print (!x);
+		x := (!x) + (!x);
+		print (!x)
+	end
+	
+/*
+3
+6
+12
+*/
+
+//Test de l'affectation

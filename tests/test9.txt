@@ -1,0 +1,19 @@
+begin 
+	if true then print 1;
+	if true then 
+		begin 
+			if 2==2 then print 2;
+			if false then print 3 else print 3;
+			if false then print 4
+		end;
+	print 5
+end
+
+/*Affichage attendu :
+1
+2
+3
+5
+*/
+
+//Test de la conditionnelle sans alternative

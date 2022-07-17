@@ -1,0 +1,13 @@
+begin 
+	x := (ref 3);
+	print (!x);
+	x := 4;
+	print (!x)
+end
+
+/* Affichage attendu :
+3
+4
+*/
+
+//Test de l'affectation 

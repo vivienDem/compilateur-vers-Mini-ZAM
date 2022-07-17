@@ -1,0 +1,14 @@
+let x = (ref 0) in 
+	while (!x) < 2 do
+		begin 
+			print (!x);
+			x := 10
+		end
+	done
+	
+/*
+Affichage attendu :
+0
+*/
+
+//Test de la boucle

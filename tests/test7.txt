@@ -1,0 +1,37 @@
+begin 
+	n := (ref 10);
+	acc := (ref 1);
+		begin
+			while (!n) > 1 do
+			acc := (!n) * (!acc);
+			n := (!n) - 1;
+			print (!acc);
+			print(!n)
+			done;
+			print (!acc)
+		end
+end
+
+/* Affichage attendu :
+10
+9
+90
+8
+720
+7
+5040
+6
+30240
+5
+151200
+4
+604800
+3
+1814400
+2
+3628800
+1
+3628800
+*/
+
+//Autre version du calcul de la factorielle de 10 sans bloc.

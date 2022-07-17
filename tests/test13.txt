@@ -1,0 +1,22 @@
+/* D�finition des fonctions */
+
+fun sub (x, y) return x-y
+
+let x = (ref 10) in 			
+	while x > 0 do 
+		begin
+			x := sub((!x), 1);
+			print (!x);
+			if (!x) == 5 then break
+		end
+	done
+	
+/* Affichage attendu :
+9
+8
+7
+6
+5
+*/
+
+// Test de la sortie de boucle

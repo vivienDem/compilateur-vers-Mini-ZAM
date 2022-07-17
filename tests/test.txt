@@ -1,0 +1,7 @@
+begin 
+let x = 1 in 
+	let z = 12 in
+		let y = 3 in print x+y
+end
+
+//Affichage attendu : 4

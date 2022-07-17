@@ -1,0 +1,24 @@
+/* D�finition des fonctions */
+
+fun sub6 (a1, a2, a3, a4, a5, a6) return a1-a2-a3-a4-a5-a6
+fun sub (x, y) return x-y
+fun sub3 (x, y, z) return x-y-z
+fun f () return 10-2
+ 			
+begin
+	print sub(10,5);
+	print f();
+	skip; // Ne rien faire
+	print sub3(10,1,2);
+	print sub6(100, 1, 2, 3, 4, 5)
+end
+
+/*Affichage attendu :
+5
+8
+7
+85
+*/
+
+// Test des fonctions avec plusieurs arguments et sans argument
+// On test aussi le non parenthésage de la soustraction

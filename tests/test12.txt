@@ -1,0 +1,16 @@
+/* D�finition des fonctions */
+
+fun sub (x, y) return x-y
+
+ 			
+begin
+	let x = 5 in 
+		let y = 10 in 
+			print sub (y, x)
+end
+
+/* Affichage attendu :
+5
+*/
+
+// Test des fonctions dans un bloc avec les mêmes noms de variable et d'argument

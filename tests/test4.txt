@@ -1,0 +1,11 @@
+begin
+	if not true then print 1 else print 2;
+	print 3
+end
+
+/*
+Affichage attendu :
+2
+3
+*/
+//On test ici le bon fonctionnement de l'instruction conditionnelle.

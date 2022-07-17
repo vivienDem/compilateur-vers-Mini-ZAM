@@ -1,0 +1,36 @@
+let n = (ref 10) in
+	let acc = (ref 1) in
+		begin
+			while (!n) > 1 do
+			acc := (!n) * (!acc);
+			n := (!n) - 1;
+			print (!acc);
+			print(!n)
+			done;
+			print (!acc)
+		end
+		
+/*
+Affichage attendu :
+10
+9
+90
+8
+720
+7
+5040
+6
+30240
+5
+151200
+4
+604800
+3
+1814400
+2
+3628800
+1
+3628800
+*/
+
+// Il est à noter que le résultat de ce programme est factoriel 10.
